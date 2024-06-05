@@ -18,9 +18,11 @@ body {
 .nav-img img {
     width: 100%;
 }
+
 .navbar_edi {
     padding: 0;
 }
+
 .nav-img {
     background-color: #009688;
 }
@@ -35,10 +37,11 @@ body {
 /* .main_nav {
     background: #CDDC39;
 }  */
-.main_nav.bg-light{
+.main_nav.bg-light {
     background-color: red;
-   
+
 }
+
 .nav_img img {
     width: 200px;
     height: auto;
@@ -51,22 +54,27 @@ body {
     padding: 11px;
     background: #6c757d;
 }
+
 .main_nav {
     background: #ffffff;
     position: relative;
 }
+
 a.nav-link {
     font-size: 16px;
     font-weight: 800;
 }
+
 div#navbarSupportedContent {
     display: flex;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
 }
+
 a.nav-link {
     margin-right: 19px;
 }
+
 .nav_img::after {
     content: "";
     position: absolute;
@@ -77,6 +85,7 @@ a.nav-link {
     bottom: -10px;
     z-index: 99;
 }
+
 .nav_img::before {
     content: "";
     position: absolute;
@@ -87,6 +96,7 @@ a.nav-link {
     z-index: 999;
     right: 44%;
 }
+
 .main-nav-add img {
     width: 100%;
     height: 100%;
@@ -101,6 +111,7 @@ a.nav-link {
 .main-nav ul {
     padding-left: 120px;
 }
+
 /* =================================== Navbar-End ===================================== */
 /* ================================= Section-1-start ================================== */
 
@@ -113,6 +124,7 @@ a.nav-link {
     position: relative;
     z-index: 9;
 }
+
 .sec-title {
     width: 50%;
     position: absolute;
@@ -121,10 +133,9 @@ a.nav-link {
 }
 
 .sec-title h4 {
-    font-size: 60px;
     font-weight: 900;
     color: #fff;
-    /* width: clamp(65px,12.2vw,264px); */
+    font-size: clamp(18px,5.2vw,71px);
 }
 
 .sec-title p {
@@ -132,6 +143,7 @@ a.nav-link {
     font-size: 1rem;
     line-height: 30px;
 }
+
 .sec-1::after {
     content: "";
     position: absolute;
@@ -142,6 +154,129 @@ a.nav-link {
     z-index: -1;
 }
 
-colgroup
+.main-wel span {
+    /* background:white; */
+    border-radius: 50px;
+    /* padding: 5px 40px; */
+    color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.main-wel {
+    margin-bottom: 30px;
+    position: relative;
+    width: max-content;
+    padding: 0 40px;
+    background-color: #fff;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 12;
+}
+
+.main-wel img {
+    width: 17px;
+}
+
+.main-sec-im {
+    background: red;
+    border-radius: 50px;
+    padding: 8px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transition: 0.5s;
+    z-index: 0;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.main-sec-im img:hover {
+    left: 202px;
+    color: red;
+
+    transform: rotate x(90deg);
+}
+
+.main-wel:before {
+    content: '';
+    background-color: red;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.main-wel:hover::before {
+    width: 100%;
+    color: #fff;
+
+}
+
+.main-wel:hover>div+span {
+    color: #fff !important;
+}
+
+.main-sec-soc {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    padding: 40px 40px;
+}
+
+.sec_1-icon img {
+    width: 30px;
+    height: 20px;
+}
+
+.sec_1-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec_1-icon p {
+    margin: 0;
+    color: #fff;
+}
+
+.img-media {
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 0px 30px;
+    position: relative;
+}
+
+.img-media img {
+    width: 15px;
+    height: 15px;
+    filter: brightness(0) saturate(100%) invert(10%) sepia(88%) saturate(7357%) hue-rotate(7deg) brightness(123%) contrast(116%);
+}
+.img-media::after {
+    content: "";
+    height: 2px;
+    width: 20px;
+    background: red;
+    position: absolute;
+    right: -20px;
+}
 
 /* ================================= Section-1-End ==================================== */
