@@ -455,6 +455,7 @@ a.nav-link {
 
 .section_4-card-1 {
     margin: 31px 0;
+    position: relative;
 }
 .main_section_4-head {
     text-align: center;
@@ -480,5 +481,66 @@ a.nav-link {
     font-size: 30px;
     font-weight: 900;
     color: darkslategray;
+}
+.check_sec_4 {
+    padding: 4px 0;
+}
+.sec_4_bottom-icon img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(7303%) hue-rotate(357deg) brightness(90%) contrast(126%);
+}
+
+.sec_4_bottom-icon {
+    background: white;
+    height: 60px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50px, -50px);
+    /* left: 50%; */
+    bottom: -77px;
+    border-radius: 12px;
+    z-index: 3;
+    right: 50px;
+}
+.seco_4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card_sec0-4-1 {
+    position: absolute;
+    right: 60px;
+    bottom: -22px;
+}
+.card-seco-4 {
+    position: relative;
+}
+
+.card-seco-4::after {
+    content: "";
+    height: 18px;
+    width: 80px;
+    position: absolute;
+    background: red;
+    bottom: -31px;
+    z-index: 2;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    right: 100px;
+}
+.check_sec_4 a:hover{
+    color: red;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+.check_sec_4 a {
+    text-decoration: none;
+    color: gray;
+    transition: all 0.5s;
 }
 /* =================================== Section-4-End =========================================== */
