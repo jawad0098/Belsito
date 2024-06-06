@@ -430,4 +430,55 @@ a.nav-link {
 }
 /* =================================== Section-3-End ===========================================  */
 /* =================================== Section-4-Start ========================================= */
+
+/* .bg-section-4 {
+    background-image: url(/Assets/images/sec-4/bg-.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    position: relative;
+} */
+.bg-section-4 {
+    background: #6813be29;
+    height: 60vw;
+}
+
+.section-4-area {
+    padding: 50px 0;
+    background: #fff;
+}
+.mai-sec-4 {
+    padding: 30px;
+    background: #fff;
+}
+
+.section_4-card-1 {
+    margin: 31px 0;
+}
+.main_section_4-head {
+    text-align: center;
+    padding: 50px;
+}
+
+.main_section_4-head p {
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+}
+
+.main_section_4-head h4 {
+    font-size: 40px;
+    font-weight: 900;
+    color: darkslategray;
+}
+.main-card_section-4 {
+    line-height: 26px;
+}
+
+.main-card_section-4 h4 {
+    font-size: 30px;
+    font-weight: 900;
+    color: darkslategray;
+}
 /* =================================== Section-4-End =========================================== */
