@@ -381,7 +381,7 @@ a.nav-link {
     padding: 36px;
     line-height: 30px;
 }
-.section-3-title p {
+.section-3-title > p {
     font-size: 14px;
     font-weight: 700;
     color: red;
@@ -391,4 +391,43 @@ a.nav-link {
     font-weight: 800;
     color: darkslategray;
 }
+.section-3-title span {
+    padding: 20px 0;
+}
+.sec_3rd {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0;
+}
+.third_title h5 {
+    font-size: 24px;
+    font-weight: 800;
+    color: darkslategray;
+}
+.sec-3rd-icons img {
+    width: 100%;
+}
+
+.sec-3rd-icons {
+    width: clamp(33px, 102.4vw, 177px);
+}
+
+.sec_3-main-area {
+    display: flex;
+    align-items: center;
+}
+
+.sec-main-aarea-img img {
+    width: 100%;
+}
+
+.sec-main-aarea-img {
+    width: clamp(160px, 110.3vw, 302px);
+}
+.section-3-btn {
+    padding: 20px 0px;
+}
 /* =================================== Section-3-End ===========================================  */
+/* =================================== Section-4-Start ========================================= */
+/* =================================== Section-4-End =========================================== */
