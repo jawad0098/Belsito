@@ -135,7 +135,7 @@ a.nav-link {
 .sec-title h4 {
     font-weight: 900;
     color: #fff;
-    font-size: clamp(18px, 5.2vw, 71px);
+    font-size: clamp(18px, 5.2vw, 63px);
 }
 
 .sec-title p {
@@ -452,11 +452,13 @@ a.nav-link {
 .mai-sec-4 {
     padding: 30px;
     background: #fff;
+    border: 1px solid #80808096;
 }
 
 .section_4-card-1 {
     margin: 31px 0;
     position: relative;
+    
 }
 .main_section_4-head {
     text-align: center;
@@ -495,15 +497,15 @@ a.nav-link {
 
 .sec_4_bottom-icon {
     background: white;
-    height: 60px;
-    width: 80px;
+    height: 70px;
+    width: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     transform: translate(-64px, -90px);
     left: 0px;
-    bottom: -77px;
+    bottom: -95px;
     border-radius: 12px;
     z-index: 3;
 }
@@ -516,26 +518,25 @@ a.nav-link {
 .card_sec0-4-1 {
     position: absolute;
     right: 60px;
-    bottom: 13px;
 }
 .card-seco-4 {
     position: relative;
     width: 71%;
-    background: orange;
     height: 37px;
+    border: 1px solid #80808066;
 }
 
 .card-seco-4::after {
     content: "";
     height: 18px;
-    width: 80px;
+    width: 90px;
     position: absolute;
-    background: red;
-    bottom: 10px;
+    background: black;
+    bottom: -9px;
     z-index: 2;
     border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
-    left: -90px;
+    left: -64px;
 }
 .check_sec_4 a:hover{
     color: red;
@@ -547,4 +548,29 @@ a.nav-link {
     color: gray;
     transition: all 0.5s;
 }
+/* .mai-sec-4:hover{
+    background-image: url(/Assets/images/sec-4/background_card1.avif);
+}    */
+.main-section-four:hover{
+    background-image: url(../images/sec-4/background_card1.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .main-section-four::after {
+    position: absolute;
+    content: "";
+    height: 87%;
+    width: 100%;
+    background: #120b0b21;
+    visibility: hidden;
+    opacity: 0;
+} */
+.main-four-card:hover ::after{
+    visibility: visible;
+    opacity: 1;
+}
 /* =================================== Section-4-End =========================================== */
+/* =================================== Section-5-Start =========================================== */
+/* =================================== Section-5-End =========================================== */
