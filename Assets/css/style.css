@@ -448,11 +448,15 @@ a.nav-link {
 .section-4-area {
     padding: 50px 0;
     background: #fff;
+    padding-bottom: 0;
 }
 .mai-sec-4 {
     padding: 30px;
     background: #fff;
     border: 1px solid #80808096;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
 }
 
 .section_4-card-1 {
@@ -479,6 +483,8 @@ a.nav-link {
 }
 .main-card_section-4 {
     line-height: 26px;
+    position: relative;
+    z-index: 4;
 }
 
 .main-card_section-4 h4 {
@@ -488,6 +494,8 @@ a.nav-link {
 }
 .check_sec_4 {
     padding: 4px 0;
+    position: relative;
+    z-index: 4;
 }
 .sec_4_bottom-icon img {
     width: 50px;
@@ -546,7 +554,7 @@ a.nav-link {
 .check_sec_4 a {
     text-decoration: none;
     color: gray;
-    transition: all 0.5s;
+   
 }
 /* .mai-sec-4:hover{
     background-image: url(/Assets/images/sec-4/background_card1.avif);
@@ -556,21 +564,120 @@ a.nav-link {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    color: #fff;
 }
 
-/* .main-section-four::after {
+.mai-sec-4::after {
     position: absolute;
     content: "";
-    height: 87%;
-    width: 100%;
-    background: #120b0b21;
-    visibility: hidden;
+    inset: -100% 0 0 100%;
+    background: #020202ab;
+    top: 0;
+    left: 0;
     opacity: 0;
-} */
+    visibility: hidden;
+    transition: all 0.5s;
+}
 .main-four-card:hover ::after{
     visibility: visible;
     opacity: 1;
 }
+.mai-sec-4:hover::after {
+    opacity: 1;
+    visibility: visible;
+    inset: 0;
+}
+
+.main-section-four:hover .main-card_section-4 h4 {
+    color: #ffff;
+}
+
+h4 {}
+
+.main-section-four:hover .form-check label>a {
+    color: #fff;
+}
+
+input#flexCheckDefault:checked ~ label > a {
+    color: #F44336 !important;
+}
 /* =================================== Section-4-End =========================================== */
 /* =================================== Section-5-Start =========================================== */
+
+.bg_5 {
+    background-image: url(../images/sec-5/bac.png);
+    /* padding: 60px; */
+    /* clip-path: polygon(0 0, 100% 0, 92% 100%, 7% 100%); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main-sec_5 {
+    padding: 0px 80px;
+    /* padding-bottom: 40px; */
+    /* position: relative; */
+}
+
+.sec_five-heading h4>span {
+
+    color: red;
+    
+}
+
+.sec_five-heading h4 {
+    font-weight: 900;
+    color: #fff;
+    font-size: clamp(6px, 2.2vw,20px);
+}
+
+.sec_5-img img {
+    width: clamp(30px, 30vw, 210px);
+}
+
+.section-5-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sec_5-img {
+    position: relative;
+}
+
+.sec_5-img::after {
+    content: "";
+    height: 9%;
+    width: 100%;
+    position: absolute;
+    background: red;
+    bottom: -9px;
+    left: 0;
+    z-index: 99999;
+}
+.bg_5::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    background: white;
+    clip-path: polygon(0 0, 49% 49%, 100% 100%, 0 100%);
+    top: 1px;
+    /* border: none; */
+    /* border: 1px solid #ff000000; */
+    left: -1px;
+}
+
+.bg_5::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    background: #ffffff;
+    top: 1px;
+    right: -1px;
+    clip-path: polygon(100% 100%, 0 100%, 46% 53%, 100% 0);
+}
 /* =================================== Section-5-End =========================================== */
+.section_area-6 {
+    padding: 50px 0px;
+}
