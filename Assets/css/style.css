@@ -371,9 +371,9 @@ a.nav-link {
 }
 
 
- /* =================================== Section-2-End ========================================= */
- /* =================================== Section-3-Start =========================================  */
- .section-3-area img {
+/* =================================== Section-2-End ========================================= */
+/* =================================== Section-3-Start =========================================  */
+.section-3-area img {
     width: 100%;
 }
 
@@ -381,30 +381,36 @@ a.nav-link {
     padding: 36px;
     line-height: 30px;
 }
-.section-3-title > p {
+
+.section-3-title>p {
     font-size: 14px;
     font-weight: 700;
     color: red;
 }
+
 .section-3-title h4 {
     font-size: 32px;
     font-weight: 800;
     color: darkslategray;
 }
+
 .section-3-title span {
     padding: 20px 0;
 }
+
 .sec_3rd {
     display: flex;
     align-items: center;
     gap: 24px;
     padding: 20px 0;
 }
+
 .third_title h5 {
     font-size: 24px;
     font-weight: 800;
     color: darkslategray;
 }
+
 .sec-3rd-icons img {
     width: 100%;
 }
@@ -425,9 +431,11 @@ a.nav-link {
 .sec-main-aarea-img {
     width: clamp(160px, 110.3vw, 302px);
 }
+
 .section-3-btn {
     padding: 20px 0px;
 }
+
 /* =================================== Section-3-End ===========================================  */
 /* =================================== Section-4-Start ========================================= */
 
@@ -450,6 +458,7 @@ a.nav-link {
     background: #fff;
     padding-bottom: 0;
 }
+
 .mai-sec-4 {
     padding: 30px;
     background: #fff;
@@ -462,8 +471,9 @@ a.nav-link {
 .section_4-card-1 {
     margin: 31px 0;
     position: relative;
-    
+
 }
+
 .main_section_4-head {
     text-align: center;
     padding: 50px;
@@ -481,6 +491,7 @@ a.nav-link {
     font-weight: 900;
     color: darkslategray;
 }
+
 .main-card_section-4 {
     line-height: 26px;
     position: relative;
@@ -492,11 +503,13 @@ a.nav-link {
     font-weight: 900;
     color: darkslategray;
 }
+
 .check_sec_4 {
     padding: 4px 0;
     position: relative;
     z-index: 4;
 }
+
 .sec_4_bottom-icon img {
     width: 50px;
     height: 50px;
@@ -517,6 +530,7 @@ a.nav-link {
     border-radius: 12px;
     z-index: 3;
 }
+
 .seco_4 {
     display: flex;
     align-items: center;
@@ -527,6 +541,7 @@ a.nav-link {
     position: absolute;
     right: 60px;
 }
+
 .card-seco-4 {
     position: relative;
     width: 71%;
@@ -546,20 +561,23 @@ a.nav-link {
     border-bottom-left-radius: 14px;
     left: -64px;
 }
-.check_sec_4 a:hover{
+
+.check_sec_4 a:hover {
     color: red;
     text-decoration: underline;
     transition: all 0.5s;
 }
+
 .check_sec_4 a {
     text-decoration: none;
     color: gray;
-   
+
 }
+
 /* .mai-sec-4:hover{
     background-image: url(/Assets/images/sec-4/background_card1.avif);
 }    */
-.main-section-four:hover{
+.main-section-four:hover {
     background-image: url(../images/sec-4/background_card1.avif);
     background-position: center;
     background-size: cover;
@@ -578,10 +596,12 @@ a.nav-link {
     visibility: hidden;
     transition: all 0.5s;
 }
-.main-four-card:hover ::after{
+
+.main-four-card:hover ::after {
     visibility: visible;
     opacity: 1;
 }
+
 .mai-sec-4:hover::after {
     opacity: 1;
     visibility: visible;
@@ -598,9 +618,10 @@ h4 {}
     color: #fff;
 }
 
-input#flexCheckDefault:checked ~ label > a {
+input#flexCheckDefault:checked~label>a {
     color: #F44336 !important;
 }
+
 /* =================================== Section-4-End =========================================== */
 /* =================================== Section-5-Start =========================================== */
 
@@ -613,22 +634,21 @@ input#flexCheckDefault:checked ~ label > a {
     background-repeat: no-repeat;
     position: relative;
 }
+
 .main-sec_5 {
-    padding: 0px 80px;
-    /* padding-bottom: 40px; */
-    /* position: relative; */
+    padding: 0px 40px;
 }
 
 .sec_five-heading h4>span {
 
     color: red;
-    
+
 }
 
 .sec_five-heading h4 {
     font-weight: 900;
     color: #fff;
-    font-size: clamp(6px, 2.2vw,20px);
+    font-size: clamp(6px, 2.2vw, 20px);
 }
 
 .sec_5-img img {
@@ -640,6 +660,7 @@ input#flexCheckDefault:checked ~ label > a {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .sec_5-img {
     position: relative;
 }
@@ -654,6 +675,7 @@ input#flexCheckDefault:checked ~ label > a {
     left: 0;
     z-index: 99999;
 }
+
 .bg_5::after {
     content: "";
     position: absolute;
@@ -677,7 +699,158 @@ input#flexCheckDefault:checked ~ label > a {
     right: -1px;
     clip-path: polygon(100% 100%, 0 100%, 46% 53%, 100% 0);
 }
+
+.form-check span {
+    position: relative;
+}
+
+.form-check span::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: red;
+    position: absolute;
+    bottom: -2px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.form-check span:hover,
+.form-check span:hover::after {
+    color: red;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
 /* =================================== Section-5-End =========================================== */
+/* =================================== Section-6-Start ========================================= */
 .section_area-6 {
     padding: 50px 0px;
 }
+
+.sec__six-title {
+    line-height: 30px;
+}
+
+.sec__six-title p {
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+}
+
+.sec__six-title>span {
+    padding: 20px 0px;
+    display: inline-block;
+}
+
+.sec__six-title h4 {
+    font-size: 40px;
+    font-weight: 900;
+    color: darkslategray;
+}
+
+.sec_6-check input label,
+.form-check-input:checked {
+    background-color: red;
+    border-color: red;
+}
+
+
+.sec_6-check label {
+    padding: 1px 8px;
+}
+
+.sec_6-check {
+    padding: 6px 0;
+    display: flex;
+}
+
+.sec_six-prograss {
+    width: 50%;
+}
+
+.sec_six-prograss,
+.progress {
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: #fff;
+    height: 8px;
+    border-bottom: 2px solid red;
+    width: 100%;
+}
+.sec_six-prograss,
+.progress-bar{
+    background-color: red;
+}
+.sec_six-per {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sec_six-per p {
+    margin: 9px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: darkslategray;
+}
+.prograss_bar-control-main {
+    padding-top: 13px;
+    /* margin-top: 8px; */
+}
+.sec__six-area {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.sec-six-second-cont h4 {
+    font-size: 26px;
+    font-weight: 900;
+    color: darkslategray;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.sec-six-second-cont img {
+    width: 100%;
+}
+
+.sec-six-second-main {
+    background: #d9d8d87a;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0;
+    margin-left: 20px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: relative;
+}
+.sec-six-second-cont p {
+    margin: 0;
+   
+}
+.main_sec_six__area-6 {
+    padding-top: 60px;
+}
+
+.sec-six-second-main::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 316px;
+    background: #d9d8d87a;
+    left: -316px;
+}
+
+
+
+/* =================================== Section-6-End =========================================== */
