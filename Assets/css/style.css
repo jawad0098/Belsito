@@ -840,7 +840,7 @@ input#flexCheckDefault:checked~label>a {
     /* padding-bottom: 12px; */
 }
 .main_sec_six__area-6 {
-    padding-top: 60px;
+    padding-top: 0px;
 }
 
 .sec-six-second-main::after {
@@ -850,11 +850,12 @@ input#flexCheckDefault:checked~label>a {
     width: 316px;
     background: #d9d8d87a;
     left: -316px;
+    top: 102px;
 }
 .play_sec-6 {
     height: 50px;
     width: 50px;
-    background: red;
+    background: #000;
     border-radius: 40px;
     align-items: center;
     display: flex;
@@ -869,6 +870,12 @@ input#flexCheckDefault:checked~label>a {
 .sec-six-6-sec img {
     width: 100%;
 }
+.prograss_bar-control-main-1 {
+    margin-top: 61px;
+}
 
+.sec_6-buttona {
+    margin-top: 24px;
+}
 
 /* =================================== Section-6-End =========================================== */
