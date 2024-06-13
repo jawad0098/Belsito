@@ -1126,11 +1126,13 @@ button#pills-room-tab {
 /* =================================== Section-8-End =========================================== */
 /* =================================== Section-9-Start =========================================== */
 .sec_nine_area {
-    padding: 100px 0;
     background: #fff;
+    padding-bottom: 70px;
 }
 .sec-nine-main-title{
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 .sec-nine-main-title h4{
     font-size: 34px;
@@ -1188,7 +1190,6 @@ button#pills-room-tab {
 .sec_img_nine-icons {
     position: absolute;
     z-index: 99;
- 
     height: 70px;
     left: -38px;
     width: 170px;
@@ -1200,6 +1201,22 @@ button#pills-room-tab {
     align-items: center;
     justify-content: center;
     transform: rotate(-90deg);
+    transition: 0.5s;
+
+}
+.sec-nine_cards:hover .sec_img_nine-icons {
+    width: 100%;
+    transform: translateY(0%) rotate(0);
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    transition-timing-function: cubic-bezier(0.5, 2.7, 0.5, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.forword_share i {
+    transition: 0.5s;
+    transform: rotate(0deg);
 }
 .sec_img_nine-icons p {
     margin: 0;
@@ -1225,16 +1242,10 @@ button#pills-room-tab {
     z-index: 5;
     right: 20px;
 }
-.copy_icon-end {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-}
 
 .copy__icon {
     position: absolute;
-    top: 66px;
+    top: 0;
     right: 18px;
     z-index: 1;
     opacity: 0;
@@ -1261,7 +1272,64 @@ button#pills-room-tab {
     opacity: 1;
     visibility: visible;
     transition: all 0.5s;
+    top: 80px;
 }
+.sec-nine_cards:hover .forword_share i {
+    transform: rotate(267deg);
+    transition: 0.7s;
+}
+
+
+
+
+.hover_me:hover > :not(:hover) {
+    filter: grayscale(1);
+}
+.hover_me:hover img {
+    filter: blur(0px);
+}
+.hover_me:hover > :not(:hover) img {
+    filter: blur(2px);
+}
+
+.sec-nine_cards:hover .copy__icon .copy_icon-end i {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+}
+
+.sec-nine_cards .copy__icon .copy_icon-end i {
+    transition: 0.3s;
+    opacity: 0;
+    visibility: visible;
+    left: -12px;
+    transition-timing-function: cubic-bezier(0.5, 2.7, 0.5, 0.5);
+}
+
+.sec-nine_cards:hover .copy__icon .copy_icon-end i:nth-child(1) {
+    transition-delay: 0.15s;
+    left: 0px;
+}
+
+.sec-nine_cards:hover .copy__icon .copy_icon-end i:nth-child(2) {
+transition-delay: 0.20s;
+    left: 0px;
+}
+.sec-nine_cards:hover .copy__icon .copy_icon-end i:nth-child(3) {
+transition-delay: 0.25s;
+    left: 0px;
+}
+.sec-nine_cards:hover .copy__icon .copy_icon-end i:nth-child(4) {
+transition-delay: 0.30s;
+    left: 0px;
+}
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: red;
+}
+
 /* =================================== Section-9-End ============================================= */
 /* =================================== Section-10-Start ============================================= */
 
@@ -1292,4 +1360,213 @@ button#pills-room-tab {
     border: 1px solid red;
     padding: 6px;
 }
+
+
+
+
+
+
 /* =================================== Section-10-End ============================================= */
+/* =================================== Section-11-Start =========================================== */
+
+/* .sec-11-area {
+    position: relative;
+
+    padding-bottom: 764px;
+}
+.sec-11-main-area {
+    clip-path: circle(49.3% at 50% 35%);
+    background: red;
+    position: absolute;
+    top: 0;
+    height: 90%;
+    width: 90%;
+    z-index: 0;
+    left: 86px;
+    padding: 70px 200px;
+}
+
+.sec_11-bg {
+    z-index: -1;
+}
+
+.sec_11-bg img {
+    width: 100%;
+} */
+
+/* .sec-main-11-area {
+    background-image: url(../images/sec-11/Screenshot_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.sec-11_area {
+    clip-path: circle(48.6% at 50% 37%);
+    background: red;
+    height: 100%;
+    width: 100%;
+} */
+
+/* =================================== Section-11-End ============================================= */
+/* =================================== Section-12-Start ============================================= */
+/* =================================== Section-12-End ============================================= */
+/* =================================== Section-13-Start ============================================= */
+.sec-main-13-areaa {
+    border: 1px solid #80808059;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+.sec_13-area {
+    padding: 90px 0;
+}
+.section-13-img img {
+    width: 100%;
+}
+.sec-titlw_sec-13 span {
+    padding: 10px 24px;
+    background: #d3d3d34d;
+    display: inline-block;
+    color: black;
+    font-size: clamp(8px,3.2vw,13px);
+    width: 100px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+.sec-titlw_sec-13 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-titlw_sec-13 p {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.sec-titlw_sec-13 span::after {
+    content: "\f0da";
+    font-family: 'FontAwesome';
+    color: red;
+    position: absolute;
+    font-size: 30px;
+    left: 95px;
+    top: -2px;
+}
+.sec_thirteen {
+    padding: 20px;
+    line-height: 30px;
+}
+
+.sec_thirteen h4 {
+    font-size: clamp(18px,4.5vw,30px);
+    font-weight: 900;
+    color: darkslategrey;
+}
+.stars-sec-13 {
+    border-top: 1px solid #80808078;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.stars-sec-13 span {
+    display: flex;
+    margin: 0;
+    text-align: center;
+}
+.stars-sec-13 span i {
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.stars-sec-13 span p {
+    text-align: center;
+    margin: 0;
+}
+
+.stars-sec-13 a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+.stars-sec-13 span i:nth-child(1) {
+    color:#e9db18;
+}
+.stars-sec-13 span i:nth-child(2) {
+    color:#e9db18;
+}
+.stars-sec-13 span i:nth-child(3) {
+    color:#e9db18;
+}
+.section-13-img {
+    position: relative;
+}
+
+.sec_13_icon-img img {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 13;
+    transition: 0.5s;
+}
+
+.sec_13_icon-img::before {
+    content: "";
+    height: 50%;
+    width: 13px;
+    position: absolute;
+    background: red;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: 0.5s;
+}
+.sec_13_icon-img {
+    /* height: 100%; */
+    /* width: 100%; */
+    background: #242020bb;
+    position: absolute;
+    top: 0;
+    inset: 100%;
+    /* left: 0; */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.sec-main-13-areaa:hover .sec_13_icon-img {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.6s;
+    inset: 0;
+}
+
+.sec-main-13-areaa:hover .sec_13_icon-img::before {
+    top: 25%;
+    transition: 0.5s;
+}
+
+.sec-main-13-areaa:hover .sec_13_icon-img img {
+    top: 50%;
+}
+.sec-main-13-areaa:hover .sec-titlw_sec-13 span {
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+}
+.sec-main-13-areaa:hover .stars-sec-13 a {
+    color: red;
+    transition: 0.5s;
+}
+/* =================================== Section-113-End ============================================= */
+
+
+
