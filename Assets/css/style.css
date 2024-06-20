@@ -49,7 +49,7 @@ body {
 }
 
 .nav_img {
-    \: clamp(133px, 15.4vw, 403px);
+    width: clamp(133px, 15.4vw, 403px);
     position: relative;
     padding: 11px;
     background: #6c757d;
@@ -289,7 +289,7 @@ a.nav-link {
 .main-second-sec {
     margin-top: -33px;
     position: relative;
-    top: -85px;
+    top: -53px;
     z-index: 99;
 }
 
@@ -373,15 +373,30 @@ a.nav-link {
 
 .second_sec_right {
     width: clamp(95px, 6.4vw, 97px);
-    padding: 22px;
+    padding: 19px;
     position: relative;
+}
+
+.growing_business {
+    position: relative;
+    z-index: 9;
+    margin-top: -86px;
+}
+
+/* .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
+    bottom: -38px;
+} */
+.swiper-pagination.swiper-cusrom {
+    position: absolute;
+    bottom: -9px;
 }
 
 .second_sec_right::after {
     content: '\f0d9';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1px;
     transform: translate(10px, 10px);
     font-family: 'FontAwesome';
     font-size: 60px;
@@ -393,22 +408,26 @@ a.nav-link {
     margin-left: -38px;
 }
 
-/* .img-sec_second img {
-    width: 100%;
-    filter: brightness(0) saturate(100%) invert(10%) sepia(88%) saturate(7357%) hue-rotate(7deg) brightness(123%) contrast(116%);
+.main-second:hover .second_top-icon img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(7476%) hue-rotate(192deg) brightness(108%) contrast(104%);
 }
 
-.img-sec_second {
-    position: absolute;
-    width: clamp(16px, 5.2vw, 48px);
-    right: 88px;
-} */
+.main-second:hover .second_sec_right {
+    background-color: red;
 
+}
+.sercfadhf {
+    margin-top: 50px;
+}
 
 /* =================================== Section-2-End ========================================= */
 /* =================================== Section-3-Start =========================================  */
 .section-3-area img {
     width: 100%;
+}
+
+.section_3 {
+    padding-top: 60px;
 }
 
 .section-3-title {
@@ -660,6 +679,17 @@ input#flexCheckDefault:checked~label>a {
     color: #F44336 !important;
 }
 
+.card_sec0-4-1 a {
+    text-decoration: none;
+    color: #6e7a7a;
+    transition: 0.5s;
+}
+
+.card_sec0-4-1 a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
 /* =================================== Section-4-End =========================================== */
 /* =================================== Section-5-Start =========================================== */
 
@@ -788,6 +818,7 @@ input#flexCheckDefault:checked~label>a {
 
 .sec_6-check label {
     padding: 1px 8px;
+    font-size: clamp(12px, 3.2vw,16px);
 }
 
 .sec_6-check {
@@ -829,7 +860,7 @@ input#flexCheckDefault:checked~label>a {
 }
 
 .prograss_bar-control-main {
-    padding-top: 13px;
+    padding-top: 16px;
     /* margin-top: 8px; */
 }
 
@@ -874,7 +905,7 @@ input#flexCheckDefault:checked~label>a {
 }
 
 .main_sec_six__area-6 {
-    padding-top: 0px;
+    padding-top: 20px;
 }
 
 .sec-six-second-main::after {
@@ -1058,20 +1089,23 @@ button#pills-room-tab {
     font-size: clamp(12px, 7.2vw, 27px);
 }
 
-.sec_8-main-title p{
+.sec_8-main-title p {
     font-size: clamp(12px, 3.2vw, 18px);
     line-height: 30px;
 }
-.sec_8-text p{
+
+.sec_8-text p {
     margin: 0;
     font-size: clamp(12px, 3.2vw, 18px);
     line-height: 30px;
 }
+
 .sec_8-text h4 {
     font-weight: 800;
     font-size: clamp(12px, 7.2vw, 27px);
     color: darkslategray;
 }
+
 .main-sec__eight-8 {
     display: flex;
     align-items: center;
@@ -1082,10 +1116,11 @@ button#pills-room-tab {
     border-top-right-radius: 60px;
     padding: 16px;
     margin-bottom: 30px;
+    transition: all 0.7s;
 }
 
 .sec_8-icon i {
-    font-size: 40px;
+    font-size: 30px;
     color: red;
 }
 
@@ -1100,53 +1135,62 @@ button#pills-room-tab {
     justify-content: center;
     margin-right: 22px;
 }
-.main-sec__eight-8:hover{
-    background-color: black;
-    color: #fff;
-    border-radius: 0;
 
+.main-sec__eight-8:hover {
+    background-color: black;
+    border-radius: 0;
+    transition: all 0.7s;
 }
+
 .main-sec__eight-8:hover .sec_8-text h4 {
     color: #fff;
 }
+
 .main-sec__eight-8:hover .sec_8-icon {
     background-color: red;
     border: 2px solid #fff;
 }
+
 .main-sec__eight-8:hover .sec_8-icon i {
     color: #fff;
 }
+
 .sec_sec-8 img {
     width: 100%;
 }
 
 .sec_sec-8 {
-    width: clamp(200px,18.4vw,350px);
+    width: clamp(200px, 18.4vw, 350px);
 }
+
 /* =================================== Section-8-End =========================================== */
 /* =================================== Section-9-Start =========================================== */
 .sec_nine_area {
     background: #fff;
     padding-bottom: 70px;
 }
-.sec-nine-main-title{
+
+.sec-nine-main-title {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
 }
-.sec-nine-main-title h4{
+
+.sec-nine-main-title h4 {
     font-size: 34px;
     font-weight: 900;
     color: darkslategrey;
     margin: 0;
     padding: 20px 0;
 }
-.sec-nine-main-title p{
+
+.sec-nine-main-title p {
     font-size: 14px;
     font-weight: 700;
     color: red;
     margin: 0;
 }
+
 .sec-nine_cards img {
     width: 100%;
     height: 340px;
@@ -1155,11 +1199,13 @@ button#pills-room-tab {
     position: relative;
     z-index: 1;
 }
+
 .sec-nine_cards {
     border: 10px solid gray;
     border-radius: 18px;
     position: relative;
 }
+
 .sec-nine_cards::after {
     content: "";
     height: 50%;
@@ -1170,6 +1216,7 @@ button#pills-room-tab {
     top: -10px;
     border-top-right-radius: 18px;
 }
+
 .sec-nine_cards::before {
     content: "";
     position: absolute;
@@ -1180,13 +1227,16 @@ button#pills-room-tab {
     bottom: -10px;
     border-bottom-left-radius: 18px;
 }
+
 .sec-nine_cards:hover {
     border: 10px solid black;
     transition: 0.5s;
 }
-.sec-nine_cards img:hover{
+
+.sec-nine_cards img:hover {
     filter: grayscale();
 }
+
 .sec_img_nine-icons {
     position: absolute;
     z-index: 99;
@@ -1204,6 +1254,7 @@ button#pills-room-tab {
     transition: 0.5s;
 
 }
+
 .sec-nine_cards:hover .sec_img_nine-icons {
     width: 100%;
     transform: translateY(0%) rotate(0);
@@ -1214,10 +1265,12 @@ button#pills-room-tab {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
 .forword_share i {
     transition: 0.5s;
     transform: rotate(0deg);
 }
+
 .sec_img_nine-icons p {
     margin: 0;
 }
@@ -1227,6 +1280,7 @@ button#pills-room-tab {
     font-size: 19px;
     font-weight: 900;
 }
+
 .forword_share {
     height: 40px;
     font-size: 22px;
@@ -1268,12 +1322,14 @@ button#pills-room-tab {
     color: #fff;
     background: red;
 }
+
 .sec-nine_cards:hover .copy__icon {
     opacity: 1;
     visibility: visible;
     transition: all 0.5s;
     top: 80px;
 }
+
 .sec-nine_cards:hover .forword_share i {
     transform: rotate(267deg);
     transition: 0.7s;
@@ -1282,13 +1338,15 @@ button#pills-room-tab {
 
 
 
-.hover_me:hover > :not(:hover) {
+.hover_me:hover> :not(:hover) {
     filter: grayscale(1);
 }
+
 .hover_me:hover img {
     filter: blur(0px);
 }
-.hover_me:hover > :not(:hover) img {
+
+.hover_me:hover> :not(:hover) img {
     filter: blur(2px);
 }
 
@@ -1312,24 +1370,37 @@ button#pills-room-tab {
 }
 
 .sec-nine_cards:hover .copy__icon .copy_icon-end i:nth-child(2) {
-transition-delay: 0.20s;
+    transition-delay: 0.20s;
     left: 0px;
 }
+
 .sec-nine_cards:hover .copy__icon .copy_icon-end i:nth-child(3) {
-transition-delay: 0.25s;
+    transition-delay: 0.25s;
     left: 0px;
 }
+
 .sec-nine_cards:hover .copy__icon .copy_icon-end i:nth-child(4) {
-transition-delay: 0.30s;
+    transition-delay: 0.30s;
     left: 0px;
 }
+
 .swiper-pagination-bullet {
     height: 7px;
     width: 50px;
     border-radius: 10px;
     background-color: red;
 }
-
+.iner_secmdf-pag {
+    margin-top: 60px;
+}
+.copy_icon-end i:hover {
+    background: red;
+    color: #fff;
+    transition: 0.7s;
+}
+.copy_icon-end i{
+    transition:0.7s;
+}
 /* =================================== Section-9-End ============================================= */
 /* =================================== Section-10-Start ============================================= */
 
@@ -1340,19 +1411,23 @@ transition-delay: 0.30s;
     padding-top: 60px;
     padding-bottom: 70px;
 }
+
 .shape_brand {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .logo_shap-1 {
     filter: grayscale(100%);
     opacity: 0.5;
 }
+
 .brand_area-main {
     background-color: #fff;
 }
+
 .logo_shap-1:hover {
     filter: brightness(0) saturate(100%) invert(21%) sepia(78%) saturate(7061%) hue-rotate(356deg) brightness(115%) contrast(120%);
     opacity: 1;
@@ -1369,7 +1444,7 @@ transition-delay: 0.30s;
 /* =================================== Section-10-End ============================================= */
 /* =================================== Section-11-Start =========================================== */
 
-/* .sec-11-area {
+.sec-11-area {
     position: relative;
 
     padding-bottom: 764px;
@@ -1392,7 +1467,7 @@ transition-delay: 0.30s;
 
 .sec_11-bg img {
     width: 100%;
-} */
+}
 
 /* .sec-main-11-area {
     background-image: url(../images/sec-11/Screenshot_1.png);
@@ -1421,19 +1496,22 @@ transition-delay: 0.30s;
 .sec_13-area {
     padding: 90px 0;
 }
+
 .section-13-img img {
     width: 100%;
 }
+
 .sec-titlw_sec-13 span {
     padding: 10px 24px;
     background: #d3d3d34d;
     display: inline-block;
     color: black;
-    font-size: clamp(8px,3.2vw,13px);
+    font-size: clamp(8px, 3.2vw, 13px);
     width: 100px;
     font-weight: 900;
     transition: 0.5s;
 }
+
 .sec-titlw_sec-13 {
     position: relative;
     display: flex;
@@ -1455,16 +1533,18 @@ transition-delay: 0.30s;
     left: 95px;
     top: -2px;
 }
+
 .sec_thirteen {
     padding: 20px;
     line-height: 30px;
 }
 
 .sec_thirteen h4 {
-    font-size: clamp(18px,4.5vw,30px);
+    font-size: clamp(18px, 4.5vw, 30px);
     font-weight: 900;
     color: darkslategrey;
 }
+
 .stars-sec-13 {
     border-top: 1px solid #80808078;
     display: flex;
@@ -1479,6 +1559,7 @@ transition-delay: 0.30s;
     margin: 0;
     text-align: center;
 }
+
 .stars-sec-13 span i {
     display: flex;
     align-items: center;
@@ -1495,15 +1576,19 @@ transition-delay: 0.30s;
     color: gray;
     transition: 0.5s;
 }
+
 .stars-sec-13 span i:nth-child(1) {
-    color:#e9db18;
+    color: #e9db18;
 }
+
 .stars-sec-13 span i:nth-child(2) {
-    color:#e9db18;
+    color: #e9db18;
 }
+
 .stars-sec-13 span i:nth-child(3) {
-    color:#e9db18;
+    color: #e9db18;
 }
+
 .section-13-img {
     position: relative;
     object-fit: cover;
@@ -1531,6 +1616,7 @@ transition-delay: 0.30s;
     z-index: 0;
     transition: 0.5s;
 }
+
 .sec_13_icon-img {
     /* height: 100%; */
     /* width: 100%; */
@@ -1543,6 +1629,7 @@ transition-delay: 0.30s;
     visibility: hidden;
     transition: 0.5s;
 }
+
 .sec-main-13-areaa:hover .sec_13_icon-img {
     opacity: 1;
     visibility: visible;
@@ -1558,15 +1645,18 @@ transition-delay: 0.30s;
 .sec-main-13-areaa:hover .sec_13_icon-img img {
     top: 50%;
 }
+
 .sec-main-13-areaa:hover .sec-titlw_sec-13 span {
     background-color: red;
     color: #fff;
     transition: 0.5s;
 }
+
 .sec-main-13-areaa:hover .stars-sec-13 a {
     color: red;
     transition: 0.5s;
 }
+
 /* =================================== Section-113-End ============================================= */
 
 
@@ -1580,6 +1670,7 @@ transition-delay: 0.30s;
 .footer_img img {
     width: 100%;
 }
+
 .footer_icons {
     position: absolute;
     top: 0;
@@ -1591,6 +1682,7 @@ transition-delay: 0.30s;
     background: red;
     padding: 20px;
 }
+
 .sec_footer-he {
     padding: 0 30px;
 }
@@ -1602,13 +1694,15 @@ transition-delay: 0.30s;
 
 .sec_footer-he h4 {
     color: #fff;
-    font-size: clamp(14px,3.4vw,28px);
+    font-size: clamp(14px, 3.4vw, 28px);
     font-weight: 600;
 }
+
 .sec_footer-he span {
     color: #fff;
     letter-spacing: 1px;
 }
+
 .sec_footer_serch {
     position: relative;
     width: 200px;
@@ -1618,7 +1712,7 @@ transition-delay: 0.30s;
     position: absolute;
     top: 25px;
     right: -177px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: red;
     padding: 14px;
 }
@@ -1633,12 +1727,14 @@ transition-delay: 0.30s;
     text-decoration: none;
     color: #fff;
 }
+
 .section_footer-con {
     background: #000;
     padding: 8.3px;
     border-top: 1px solid #80808091;
     border-bottom: 1px solid #80808091;
 }
+
 .section_footer_main-an ul {
     /* padding: 6px 0px; */
     /* display: flex; */
@@ -1657,12 +1753,14 @@ transition-delay: 0.30s;
     text-decoration: none;
     color: #fff;
     line-height: 30px;
+    font-size: 16px;
+    transition: 0.5s;
 }
 
 .section_footer_main-an h4 {
     padding: 0;
     color: #fff;
-    font-size: clamp(12px,3.2vw,27px);
+    font-size: clamp(12px, 3.2vw, 27px);
     font-weight: 700;
 }
 
@@ -1682,6 +1780,7 @@ transition-delay: 0.30s;
     justify-content: center;
     margin-top: 19px;
 }
+
 .icon_footers-end {
     display: flex;
     align-items: center;
@@ -1700,18 +1799,22 @@ transition-delay: 0.30s;
     color: #fff;
     transition: 0.5s;
 }
+
 li.breafkdf {
     display: flex;
     align-items: center;
     padding: 4px 0;
 }
+
 .foterIcon {
     /* padding: 20px 0px; */
 }
+
 .icon_footers-end i:hover {
     background: red;
     transition: 0.5s;
 }
+
 .bottom_footer {
     display: flex;
     align-items: center;
@@ -1739,9 +1842,20 @@ li.breafkdf {
     margin: 0;
     flex-wrap: wrap;
 }
-.bootom-sec-2 ul li a:hover {color: red;transition: 0.5s;}
+
+.bootom-sec-2 ul li a:hover {
+    color: red;
+    transition: 0.5s;
+}
 
 .bootom-sec-1 span>b {
     color: red;
 }
+
+.section_footer_main-an ul li a:hover {
+    color: red;
+    transition: 0.5s;
+    border-bottom: 1px solid red;
+}
+
 /* =================================== Footer-End ============================================== */
