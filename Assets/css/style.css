@@ -433,12 +433,22 @@ a.nav-link {
 .section-3-title {
     padding: 36px;
     line-height: 30px;
+    position: relative;
 }
 
 .section-3-title>p {
     font-size: 14px;
     font-weight: 700;
     color: red;
+    margin-left: 17px;
+}
+.section-3-title> p::before {
+    content: "\f324";
+    position: absolute;
+    font-family: 'FontAwesome';
+    margin-left: -17px;
+    color: red;
+    text-align: center;
 }
 
 .section-3-title h4 {
@@ -535,12 +545,33 @@ a.nav-link {
     text-align: center;
     padding: 50px;
     padding-top: 0;
+    position: relative;
 }
 
 .main_section_4-head p {
     font-size: 14px;
     font-weight: 700;
     color: red;
+   
+}
+
+
+.main_section_4-head p::before {
+    content: "\f324";
+    position: absolute;
+    font-family: 'FontAwesome';
+    margin-left: -17px;
+    color: red;
+    text-align: center;
+}
+
+.main_section_4-head p::after {
+    content: "\f323";
+    position: absolute;
+    font-family: 'FontAwesome';
+    color: red;
+    text-align: center;
+    transform: translate(21%, 0%);
 }
 
 .main_section_4-head h4 {
@@ -790,13 +821,25 @@ input#flexCheckDefault:checked~label>a {
 
 .sec__six-title {
     line-height: 30px;
+    position: relative;
 }
 
 .sec__six-title p {
     font-size: 14px;
     font-weight: 700;
     color: red;
+    margin-left: 17px;
 }
+
+.sec__six-title p::before {
+    content: "\f324";
+    position: absolute;
+    font-family: 'FontAwesome';
+    margin-left: -17px;
+    color: red;
+    text-align: center;
+}
+
 
 .sec__six-title>span {
     /* padding: 20px 0px; */
@@ -968,7 +1011,27 @@ input#flexCheckDefault:checked~label>a {
     font-weight: 700;
     color: red;
     margin: 0;
+    position: relative;
 }
+.heading-seven p::before {
+    content: "\f324";
+    position: absolute;
+    font-family: 'FontAwesome';
+    margin-left: -17px;
+    color: red;
+    text-align: center;
+}
+
+.heading-seven p::after {
+    content: "\f323";
+    position: absolute;
+    font-family: 'FontAwesome';
+    color: red;
+    text-align: center;
+    transform: translate(21%, 0%);
+}
+
+
 
 .heading-seven h4 {
     font-size: 34px;
@@ -1174,7 +1237,30 @@ button#pills-room-tab {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
+    position: relative;
 }
+
+
+.sec-nine-main-title  p::before {
+    content: "\f324";
+    position: absolute;
+    font-family: 'FontAwesome';
+    margin-left: -17px;
+    color: red;
+    text-align: center;
+}
+
+.sec-nine-main-title  p::after {
+    content: "\f323";
+    position: absolute;
+    font-family: 'FontAwesome';
+    color: red;
+    text-align: center;
+    transform: translate(21%, 0%);
+}
+
+
+
 
 .sec-nine-main-title h4 {
     font-size: 34px;
@@ -1485,6 +1571,126 @@ button#pills-room-tab {
 
 /* =================================== Section-11-End ============================================= */
 /* =================================== Section-12-Start ============================================= */
+
+/* .sec-12-img {
+    clip-path: polygon(0 0, 100% 20%, 100% 98%, 0% 98%);
+}
+.sec-12-secnd {
+    clip-path: polygon(0 20%, 100% 0, 100% 98%, 0% 98%);
+} */
+.sec-12-center {
+    /* clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0% 100%); */
+    position: relative;
+}
+.sec-12-img img {
+    width: 100%;
+}
+
+.sec-12-secnd img {
+    width: 100%;
+}
+.sec-12-center img {
+    width: 100%;
+    border-radius: 23px;
+}
+
+.sec_main-12 {
+    position: relative;
+}
+
+.sec_12-fist {
+    position: absolute;
+    transform: rotate(21deg);
+    left: 112px;
+    top: -29px;
+}
+
+.sec_12-fist h4 {
+    font-size: 50px;
+}
+.sec_12-last {
+    position: absolute;
+    right: 150px;
+    top: -19px;
+    transform: rotate(-18deg);
+}
+
+.sec_12-last h4 {
+    font-size: 50px;
+}
+.center_12-sec {
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    color: #fff;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+.center_12-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 50px;
+    width: 80%;
+    padding: 20px;
+}
+
+.center_title_main h4 {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    font-weight: 700;
+}
+
+.center_title_main p {
+    font-size: 14px;
+    color: red;
+    margin: 0;
+    font-weight: 700;
+}
+
+.center-icons {
+    background: red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-icons i {
+    font-size: 13px;
+}
+.sec-12-center::before {
+    content: "";
+    height: 40%;
+    width: 16%;
+    position: absolute;
+    background: #d5010194;
+    top: 0;
+    left: 17%;
+    transform: rotate(-34deg);
+    border-radius: 50px;
+}
+.sec-12-center::after {
+    content: "\2b";
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    border-radius: 50px;
+    left: 31%;
+    position: absolute;
+    top: 194px;
+    color: #e11616c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
 /* =================================== Section-12-End ============================================= */
 /* =================================== Section-13-Start ============================================= */
 .sec-main-13-areaa {
@@ -1684,7 +1890,6 @@ button#pills-room-tab {
 }
 
 .sec_footer-he {
-    padding: 0 30px;
 }
 
 .footer_2nd {
@@ -1705,22 +1910,23 @@ button#pills-room-tab {
 
 .sec_footer_serch {
     position: relative;
-    width: 200px;
+    border: 1px solid #80808045;
 }
 
 .serc_sec-footer {
     position: absolute;
     top: 25px;
-    right: -177px;
     transform: translate(-50%, -50%);
     background: red;
     padding: 14px;
+    left: 274px;
 }
 
 .sec_footer_serch input {
-    width: 326px;
+    width: 224px;
     height: 50px;
     padding: 10px;
+    margin-right: 100px;
 }
 
 .serc_sec-footer a {
@@ -1767,6 +1973,7 @@ button#pills-room-tab {
 .section_footer_main-an i {
     color: red;
     margin-right: 14px;
+    margin-top: 9px;
 }
 
 .sec-4-footer-areae img {
@@ -1785,7 +1992,8 @@ button#pills-room-tab {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding-top: 11px;
+    /* padding-top: 12px; */
+    margin: 5.7px 0;
 }
 
 .icon_footers-end i {
@@ -1802,14 +2010,9 @@ button#pills-room-tab {
 
 li.breafkdf {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     padding: 4px 0;
 }
-
-.foterIcon {
-    /* padding: 20px 0px; */
-}
-
 .icon_footers-end i:hover {
     background: red;
     transition: 0.5s;
@@ -1856,6 +2059,12 @@ li.breafkdf {
     color: red;
     transition: 0.5s;
     border-bottom: 1px solid red;
+}
+.footer-main-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* =================================== Footer-End ============================================== */
