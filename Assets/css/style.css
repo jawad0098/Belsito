@@ -133,6 +133,7 @@ a.nav-link {
     position: absolute;
     left: 20%;
     top: 240px;
+    z-index: 9999;
 }
 
 .sec-title h4 {
@@ -243,6 +244,7 @@ a.nav-link {
     justify-content: space-between;
     left: 0;
     padding: 0px 50px;
+    z-index: 9999;
 }
 
 .sec_1-icon img {
@@ -1668,7 +1670,24 @@ button#pills-room-tab {
     padding-top: 60px;
     padding-bottom: 70px;
 }
+/* .sec_ten-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.sec__10-1 {
+    display: flex;
+    align-items: center;
+}
+
+sec__10-1i {
+    color: red;
+}
+
+.sec__10-1 i {
+    font-size: 26px;
+} */
 .shape_brand {
     display: flex;
     align-items: center;
@@ -1679,6 +1698,9 @@ button#pills-room-tab {
 .logo_shap-1 {
     filter: grayscale(100%);
     opacity: 0.5;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: 0.3s;
 }
 
 .brand_area-main {
@@ -1689,8 +1711,7 @@ button#pills-room-tab {
     filter: brightness(0) saturate(100%) invert(21%) sepia(78%) saturate(7061%) hue-rotate(356deg) brightness(115%) contrast(120%);
     opacity: 1;
     transition: 0.3s;
-    border: 1px solid red;
-    padding: 6px;
+    border-color: red;
 }
 
 
@@ -2213,9 +2234,9 @@ li.breafkdf {
 .bottom_footer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: #000000ed;
-    padding: 0;
+    padding: 12px 50px;
 }
 
 .bootom-sec-2 ul {
@@ -2233,7 +2254,7 @@ li.breafkdf {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    /* padding: 12px; */
     margin: 0;
     flex-wrap: wrap;
 }
@@ -2261,3 +2282,24 @@ li.breafkdf {
 }
 
 /* =================================== Footer-End ============================================== */
+
+
+.my-button {
+    transition: 0.7s;
+    width: clamp(38px, 48.2vw, 120px);
+    height: 43px;
+    font-size: clamp(11px,4vw,15px);
+    background-color: red;
+    color: #fff;
+    border: 1px solid #e50c011f;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+button.my-button:hover {
+    scale: 1.2;
+    transition: 0.7s;
+    border: 1px solid #953214;
+}
