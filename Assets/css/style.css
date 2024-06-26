@@ -132,7 +132,7 @@ a.nav-link {
     width: 50%;
     position: absolute;
     left: 20%;
-    top: 240px;
+    top: 170px;
     z-index: 9999;
 }
 
@@ -146,7 +146,7 @@ a.nav-link {
 .sec-title p {
     width: 100%;
     color: #fff;
-    font-size: clamp(9px, 2vw, 16px);
+    font-size: clamp(12px, 2vw, 16px);
     line-height: clamp(15px, 3vw, 30px);
 }
 
@@ -379,6 +379,7 @@ a.nav-link {
     z-index: 9;
     margin-top: -86px;
 }
+
 .swiper-pagination.swiper-cusrom {
     position: absolute;
     bottom: -9px;
@@ -483,9 +484,13 @@ a.nav-link {
 }
 
 .third_title h5 {
-    font-size: 24px;
+    font-size: clamp(16px, 3.2vw, 20px);
     font-weight: 800;
     color: darkslategray;
+}
+
+.third_title p {
+    font-size: clamp(12px, 3.2vw, 16px);
 }
 
 .hime_sec {
@@ -497,7 +502,7 @@ a.nav-link {
 }
 
 .sec-3rd-icons {
-    width: clamp(33px, 102.4vw, 177px);
+    width: clamp(26px, 95.4vw, 161px);
 }
 
 .sec_3-main-area {
@@ -510,7 +515,7 @@ a.nav-link {
 }
 
 .sec-main-aarea-img {
-    width: clamp(160px, 110.3vw, 302px);
+    width: clamp(160px, 140.3vw, 365px);
 }
 
 .section-3-btn {
@@ -658,9 +663,13 @@ i.fa-solid.fa-play {
 }
 
 .main-card_section-4 h4 {
-    font-size: 30px;
+    font-size: clamp(20px, 4.2vw, 30px);
     font-weight: 900;
     color: darkslategray;
+}
+
+.main-card_section-4 p {
+    font-size: clamp(12px, 4.2vw, 16px);
 }
 
 .check_sec_4 {
@@ -825,6 +834,7 @@ input#flexCheckDefault:checked~label>a {
     visibility: hidden;
     opacity: 0;
 }
+
 .section_4-card-1:hover::before {
     opacity: 1;
     visibility: visible;
@@ -848,7 +858,7 @@ input#flexCheckDefault:checked~label>a {
 
 .sec_five-heading h4>span {
 
-color: red;
+    color: red;
 }
 
 .sec_five-heading h4 {
@@ -908,6 +918,7 @@ color: red;
 
 .form-check span {
     position: relative;
+    font-size: clamp(12px, 4.2vw, 16px);
 }
 
 
@@ -951,13 +962,13 @@ color: red;
 .sec__six-title>span {
     /* padding: 20px 0px; */
     display: inline-block;
-    font-size: clamp(10px,3.2vw,16px);
+    font-size: clamp(10px, 3.2vw, 16px);
 }
 
 .sec__six-title h4 {
     font-weight: 900;
     color: darkslategray;
-    font-size: clamp(24px,3.2vw,40px);
+    font-size: clamp(24px, 3.2vw, 40px);
 }
 
 .sec_6-check input label,
@@ -1028,7 +1039,7 @@ color: red;
     color: darkslategray;
     padding: 10px 0px;
     margin: 0;
-    font-size: clamp(20px,4.2vw,22px);
+    font-size: clamp(20px, 4.2vw, 22px);
 }
 
 .sec-six-second-cont img {
@@ -1097,8 +1108,9 @@ color: red;
 .sec_6-buttona {
     margin-top: 24px;
 }
+
 .sec-six-second-cont {
-    width: clamp(54px,5vw,157px);
+    width: clamp(54px, 5vw, 157px);
 }
 
 .play_sec-6 i {
@@ -1157,7 +1169,7 @@ color: red;
 
 
 .heading-seven h4 {
-    font-size: 34px;
+    font-size: clamp(20px, 4.2vw, 34px);
     font-weight: 900;
     color: #fff;
     margin: 0;
@@ -1166,7 +1178,7 @@ color: red;
 
 .heading-seven>span {
     color: #c1c1c1;
-    font-size: 14px;
+    font-size: clamp(12px, 4.2vw, 16px);
 }
 
 .sec-seven-last-box {
@@ -1295,21 +1307,25 @@ button#pills-room-tab {
 
 .sec_8-text p {
     margin: 0;
-    font-size: clamp(12px, 3.2vw, 18px);
+    font-size: clamp(12px, 3.2vw, 16px);
     line-height: 30px;
 }
 
 .sec_8-text h4 {
     font-weight: 800;
-    font-size: clamp(12px, 7.2vw, 27px);
+    font-size: clamp(12px, 7.2vw, 24px);
     color: darkslategray;
+}
+
+.main__sec_eight-cont {
+    margin: 10px;
 }
 
 .main-sec__eight-8 {
     display: flex;
     align-items: center;
     background: #fff;
-    width: 90%;
+    width: 100%;
     border: 1px solid #fff;
     border-bottom-right-radius: 60px;
     border-top-right-radius: 60px;
@@ -1358,10 +1374,17 @@ button#pills-room-tab {
 
 .sec_sec-8 img {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sec_sec-8 {
-    width: clamp(224px, 30.4vw, 390px);
+    width: clamp(224px, 23.4vw, 365px);
+    /* text-align: center; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .main-sec__eight-8::after {
@@ -1384,11 +1407,13 @@ button#pills-room-tab {
     opacity: 1;
     transition: 0.5s all;
 }
+
 .main-sec__eight-8:hover:after {
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
 }
+
 .main-sec__eight-8::before {
     content: "";
     height: 10px;
@@ -1403,11 +1428,13 @@ button#pills-room-tab {
     visibility: hidden;
     transition: 0.5s;
 }
+
 .main-sec__eight-8:hover:before {
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
 }
+
 /* =================================== Section-8-End =========================================== */
 /* =================================== Section-9-Start =========================================== */
 .sec_nine_area {
@@ -1461,7 +1488,7 @@ button#pills-room-tab {
 
 .sec-nine_cards img {
     width: 100%;
-    height: 340px;
+    height: 500px;
     object-fit: cover;
     border-radius: 7px;
     position: relative;
@@ -1665,12 +1692,21 @@ button#pills-room-tab {
 
 .swiper-slide-next .copy_icon-end i {
     background: #fff;
-    color: #00369b;
     transition: 0.7s;
 }
 
 .copy_icon-end i {
     transition: 0.7s;
+}
+
+.copy_icon-end i:hover {
+    background: #00369b;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.copy_icon-end i {
+    transition: 0.5s;
 }
 
 /* =================================== Section-9-End ============================================= */
@@ -1683,24 +1719,6 @@ button#pills-room-tab {
     padding-top: 60px;
     padding-bottom: 70px;
 }
-/* .sec_ten-area {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.sec__10-1 {
-    display: flex;
-    align-items: center;
-}
-
-sec__10-1i {
-    color: red;
-}
-
-.sec__10-1 i {
-    font-size: 26px;
-} */
 .shape_brand {
     display: flex;
     align-items: center;
@@ -1721,10 +1739,10 @@ sec__10-1i {
 }
 
 .logo_shap-1:hover {
-    filter: brightness(0) saturate(100%) invert(21%) sepia(78%) saturate(7061%) hue-rotate(356deg) brightness(115%) contrast(120%);
     opacity: 1;
     transition: 0.3s;
-    border-color: red;
+    border-color: #00369b;
+    filter: brightness(0) saturate(100%) invert(10%) sepia(88%) saturate(4456%) hue-rotate(218deg) brightness(96%) contrast(100%);
 }
 
 
@@ -1761,31 +1779,9 @@ sec__10-1i {
     width: 100%;
 }
 
-/* .sec-main-11-area {
-    background-image: url(../images/sec-11/Screenshot_1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-}
-.sec-11_area {
-    clip-path: circle(48.6% at 50% 37%);
-    background: red;
-    height: 100%;
-    width: 100%;
-} */
-
 /* =================================== Section-11-End ============================================= */
 /* =================================== Section-12-Start ============================================= */
-
-/* .sec-12-img {
-    clip-path: polygon(0 0, 100% 20%, 100% 98%, 0% 98%);
-}
-.sec-12-secnd {
-    clip-path: polygon(0 20%, 100% 0, 100% 98%, 0% 98%);
-} */
 .sec-12-center {
-    /* clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0% 100%); */
     position: relative;
 }
 
@@ -2037,13 +2033,10 @@ sec__10-1i {
 }
 
 .sec_13_icon-img {
-    /* height: 100%; */
-    /* width: 100%; */
     background: #242020bb;
     position: absolute;
     top: 0;
     inset: 100%;
-    /* left: 0; */
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -2109,11 +2102,9 @@ sec__10-1i {
 
 .footer_icons img {
     width: 220px;
-    /* background: #db7272; */
     padding: 20px;
 }
 
-.sec_footer-he {}
 
 .footer_2nd {
     background: #000000ed;
@@ -2165,10 +2156,7 @@ sec__10-1i {
 }
 
 .section_footer_main-an ul {
-    /* padding: 6px 0px; */
-    /* display: flex; */
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
 }
 
@@ -2184,7 +2172,6 @@ sec__10-1i {
     line-height: 30px;
     font-size: 16px;
     transition: 0.5s;
-    /* padding-top: 8px; */
 }
 
 .section_footer_main-an h4 {
@@ -2217,7 +2204,6 @@ sec__10-1i {
     display: flex;
     align-items: center;
     gap: 20px;
-    /* padding-top: 12px; */
     margin: 5.7px 0;
 }
 
@@ -2235,7 +2221,6 @@ sec__10-1i {
 
 li.breafkdf {
     display: flex;
-    /* align-items: center; */
     padding: 4px 0;
 }
 
@@ -2267,7 +2252,6 @@ li.breafkdf {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 12px; */
     margin: 0;
     flex-wrap: wrap;
 }
@@ -2301,7 +2285,7 @@ li.breafkdf {
     transition: 0.7s;
     width: clamp(38px, 48.2vw, 120px);
     height: 43px;
-    font-size: clamp(11px,4vw,15px);
+    font-size: clamp(11px, 4vw, 15px);
     background-color: #03359c;
     color: #fff;
     border: 1px solid #e50c011f;
@@ -2311,13 +2295,13 @@ li.breafkdf {
     justify-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
+
 button.my-button:hover {
     scale: 1.2;
     transition: 0.7s;
     border: 1px solid #953214;
 }
 
-/* coverflow slider */
 .coverFloweffect .swiper-wrapper {
     padding: 7rem 0px;
 }
@@ -2339,50 +2323,88 @@ button.my-button:hover {
 /* """"Media Queriy""""" */
 
 /* @media (max-width: 1199px) { } */
-@media (max-width: 1399px) { 
+@media (max-width: 1399px) {
     .play_buttons {
         bottom: 10%;
     }
 }
-@media (max-width: 1199px) { 
+
+@media (max-width: 1199px) {
     .home-main {
         display: none;
     }
+
     .play_buttons {
         bottom: 7%;
     }
+
+    .main__sec_eight-cont {
+        margin: 60px;
+    }
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 991px) {
     .main-nav-add {
         margin-bottom: 12px;
     }
+
     .main-nav-btn {
         margin-bottom: 12px;
     }
-  
-}
-@media (max-width: 991px) { 
+
     .play_buttons {
         left: 39.3%;
         bottom: 14.7%;
     }
+
 }
-@media (max-width: 767px) { 
+
+@media (max-width: 767px) {
     .play_buttons {
         left: 39.3%;
         bottom: 11.7%;
     }
-}
-@media (max-width: 460px) { 
+
+    .sec_3-main-area {
+        flex-wrap: wrap;
+    }
+    .section_footer_main-an {
+        text-align: center;
+    }
+    li.breafkdf {
+        justify-content: center;
+    }
+    .icon_footers-end {
+        justify-content: center;
+    }
+    .sec-4-footer-areae {
+        position: relative;
+        left: 40%;
+    }
+    }
+
+@media (max-width: 460px) {
     .play_buttons {
         left: 39.3%;
         bottom: 8.7%;
     }
+    .sec-4-footer-areae {
+        position: relative;
+        left: 32%;
+    }
 }
-@media (max-width: 420px) { 
+
+@media (max-width: 420px) {
     .play_buttons {
         left: 39.3%;
         bottom: 8.7%;
+    }
+
+    .sec-3rd-icons {
+        width: clamp(47px, 91.4vw, 121px);
+    }
+
+    .sec_3rd {
+        flex-wrap: wrap;
     }
 }
