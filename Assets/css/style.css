@@ -2448,7 +2448,15 @@ li.breafkdf {
     margin-bottom: auto;
     margin-top: auto;
 }
+p.pragraph_botm {
+    padding: 30px 15px;
+}
 
+.foterIcon>h4 {
+    font-size: clamp(20px,3.2vw,26px);
+    font-weight: 700;
+    color: #fff;
+}
 /* =================================== Footer-End ============================================== */
 
 
