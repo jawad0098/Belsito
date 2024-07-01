@@ -1951,17 +1951,19 @@ button#pills-room-tab {
     position: absolute;
     transform: rotate(21deg);
     left: 112px;
-    top: -29px;
+    top: 30px;
 }
 
 .sec_12-fist h4 {
     font-size: 50px;
 }
-
+.main-title-sec-12 {
+    position: relative;
+}
 .sec_12-last {
     position: absolute;
     right: 150px;
-    top: -19px;
+    top: 30px;
     transform: rotate(-18deg);
 }
 
@@ -1986,6 +1988,7 @@ button#pills-room-tab {
     border-radius: 50px;
     width: 80%;
     padding: 20px;
+    display: none;
 }
 
 .center_title_main h4 {
@@ -2021,11 +2024,12 @@ button#pills-room-tab {
     height: 40%;
     width: 16%;
     position: absolute;
-    background: #d5010194;
-    top: 0;
-    left: 17%;
-    transform: rotate(-34deg);
+    background: #385ed48c;
+    top: -100px;
+    left: 20%;
+    transform: rotate(337deg);
     border-radius: 50px;
+    opacity: 0;
 }
 
 .sec-12-center::after {
@@ -2034,17 +2038,29 @@ button#pills-room-tab {
     width: 50px;
     background: #fff;
     border-radius: 50px;
-    left: 31%;
+    left: 30.5%;
     position: absolute;
-    top: 194px;
+    top: 107px;
     color: #e11616c2;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     font-weight: bold;
+    opacity: 0;
 }
-
+.swiper-slide-fully-visible:first-child {}
+.swiper-slide-next.swiper-slide-visible {}
+.swiper-slide-next.swiper-slide-visible .center_12-sec {
+    display: inline-flex;
+}
+.coverFloweffect .swiper-wrapper > div {
+    overflow: hidden;
+    border-radius: 20px;
+}
+.swiper-slide-next.swiper-slide-visible > .sec-12-center::before, .swiper-slide-next.swiper-slide-visible > .sec-12-center::after {
+    opacity: 1;
+}
 /* =================================== Section-12-End ============================================= */
 /* =================================== Section-13-Start ============================================= */
 .sec-main-13-areaa {
@@ -2702,3 +2718,5 @@ button.my-button:hover {
         bottom: 6.7%;
     }
 }
+
+
