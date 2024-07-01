@@ -469,19 +469,12 @@ a.nav-link {
     background: #03359c;
     transition: 0.5s;
     color:#fff;
-    z-index:;
 }
 
-.sec-3rd-icons:hover::after {
-    background: black;
-    color: red;
-    transition: all 0.5s;
-   
-}
 
-.sec-3rd-icons:hover .sec-3rd-icons i {
-    color: #fff;
-    
+
+.sec-3rd-icons:hover .i {
+    border-color: #fff;   
 }
 .section-3-title h4 {
     font-size: 32px;
@@ -520,13 +513,10 @@ a.nav-link {
 
 .sec-3rd-icons {
     transition: 0.5s;
-    width: 109px;
-    height: 60px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #03359c;
     position: relative;
     background: #fff;
 }
@@ -545,6 +535,13 @@ a.nav-link {
     color: #03359c;
     z-index: 99999;
     transition: 0.5s;
+    height: 55px;
+    width: 55px;
+    border: 1px solid #03359c;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sec_3-main-area {
@@ -696,6 +693,10 @@ a.nav-link {
     color: #fff;
     transition: 0.5s;
 }
+.sec-3rd-icons:hover::after {
+   background-color: #000;
+   transition: 0.5s;
+}
 
 /* =================================== Section-3-End ===========================================  */
 /* =================================== Section-4-Start ========================================= */
@@ -784,6 +785,20 @@ a.nav-link {
     position: relative;
     z-index: 4;
 }
+.check_sec_4 ul>li {
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: clamp(10px,3.2vw,16px);
+    transition: all 0.5s;
+}
+
+.check_sec_4 ul>li::before {
+    content: "\f14a";
+    font-family: 'Font Awesome 6 Pro';
+    position: absolute;
+    left: 0px;
+    color: #00369b;
+}
 
 .sec_4_bottom-icon i {
     color: #00369b;
@@ -838,20 +853,14 @@ a.nav-link {
     left: -64px;
 }
 
-.check_sec_4 a:hover {
-    color: red;
+.check_sec_4 ul>li:hover {
+    color: #00369b;
     text-decoration: underline;
     transition: all 0.5s;
 }
 
-.check_sec_4 a {
-    text-decoration: none;
-    color: gray;
-
-}
-
 .main-section-four:hover {
-    background-image: url(../images/sec-4/background_card1.avif);
+    background-image: url(../images/sec-4/dsa.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -885,15 +894,6 @@ a.nav-link {
     color: #ffff;
 }
 
-h4 {}
-
-.main-section-four:hover .form-check label>a {
-    color: #fff;
-}
-
-input#flexCheckDefault:checked~label>a {
-    color: #F44336 !important;
-}
 
 .card_sec0-4-1 a {
     text-decoration: none;
@@ -971,17 +971,38 @@ input#flexCheckDefault:checked~label>a {
 .sec_five-heading h4 {
     font-weight: 900;
     color: #fff;
-    font-size: clamp(6px, 1.6vw, 18px);
+    text-align: center;
 }
 
-.sec_5-img img {
-    width: clamp(30px, 15vw, 229px);
+
+.section-5-area > div {
+    flex: 0 0 51%;
 }
 
+.sec_5-img {
+    height: 150px;
+    width: 150px;
+}
+
+.sec_5-img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sec-5-btn {
+    display: flex;
+    justify-content: center;
+}
 .section-5-area {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .sec_5-img {
@@ -1424,12 +1445,12 @@ button#pills-room-tab {
 .sec_8-text p {
     margin: 0;
     font-size: clamp(12px, 3.2vw, 16px);
-    line-height: 30px;
+    /* line-height: 30px; */
 }
 
 .sec_8-text h4 {
     font-weight: 800;
-    font-size: clamp(12px, 7.2vw, 24px);
+    font-size: clamp(12px, 4.2vw, 24px);
     color: darkslategray;
 }
 
@@ -1455,12 +1476,19 @@ button#pills-room-tab {
 .sec_8-icon i {
     font-size: 30px;
     color: #00369b;
+    height: 60px;
+    width: 60px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sec_8-icon {
-    height: 70px;
-    width: 70px;
-    border: 1px solid #00369b;
+    /* height: 70px; */
+    /* width: 70px; */
+    /* border: 1px solid #00369b; */
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -1604,7 +1632,7 @@ button#pills-room-tab {
 
 .sec-nine_cards img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     border-radius: 7px;
     position: relative;
@@ -2210,22 +2238,25 @@ button#pills-room-tab {
 .footer_img img {
     width: 100%;
 }
-
+.footer-first {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .footer_icons {
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: clamp(100px,22vw,248px);
 }
 
 .footer_icons img {
-    width: 220px;
-    padding: 20px;
+    height: 100%;
+    width: 100%;
 }
 
 
 .footer_2nd {
-    background: #000000ed;
-    padding: 20px;
+    padding: 0 0px 20px 0;
 }
 
 .sec_footer-he h4 {
@@ -2266,8 +2297,8 @@ button#pills-room-tab {
 }
 
 .section_footer-con {
-    background: #000000ed;
-    padding: 8.3px;
+    /* background: #000000ed; */
+    padding: 20px 0;
     border-top: 1px solid #80808091;
     border-bottom: 1px solid #80808091;
 }
@@ -2310,11 +2341,8 @@ button#pills-room-tab {
 }
 
 .sec-4-footer-areae {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 19px;
-    width: clamp(144px, 12.2vw, 300px);
+    margin-top: 20px;
+    width: clamp(144px, 13vw, 300px);
 }
 
 .icon_footers-end {
@@ -2350,7 +2378,6 @@ li.breafkdf {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #000000ed;
     padding: 12px 50px;
 }
 
@@ -2361,8 +2388,9 @@ li.breafkdf {
 .bootom-sec-2 ul li a {
     text-decoration: none;
     color: #6e7a7a;
-    padding: 11px;
+    /* padding: 11px; */
     transition: 0.5s;
+    margin-right: 30px;
 }
 
 .bootom-sec-2 ul {
@@ -2393,6 +2421,16 @@ li.breafkdf {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.footer-area {
+    padding: 20px;
+    background: #000;
+    padding-bottom: 0;
+}
+
+.footer-first .foterIcon {
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 /* =================================== Footer-End ============================================== */
