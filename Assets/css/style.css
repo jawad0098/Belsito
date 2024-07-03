@@ -2699,7 +2699,7 @@ button.my-button:hover {
         height: 60%;
     }
     .sec-title {
-        width: 80%;
+        width: 86%;
     }
     .sec-title h4 {
         font-size: clamp(30px, 7.2vw, 64px);
@@ -2753,11 +2753,11 @@ button.my-button:hover {
         bottom: 6.7%;
     }
     .sec-title {
-        left: 14%;
+        left: 5%;
         top: 82px;
     }
     .sec-title h4 {
-        font-size: clamp(30px, 7.2vw, 64px);
+        font-size: clamp(26px, 7.2vw, 64px);
     }
     .sec-1 {
         height: 540px;
