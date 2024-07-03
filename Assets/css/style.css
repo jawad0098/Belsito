@@ -668,6 +668,7 @@ a.nav-link {
     border-radius: 90px;
     border: 7px solid #fff;
     object-fit: cover;
+    position: relative;
 }
 
 .sec_3-main-sec-23 {
@@ -2238,9 +2239,11 @@ button#pills-room-tab {
 
 .play_buttons {
     position: absolute;
-    left: 26%;
+    /* transform: translate(-50%, -50%); */
+    /* bottom: 11%; */
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 11%;
 }
 
 /* =================================== Section-113-End ============================================= */
@@ -2529,7 +2532,7 @@ button.my-button:hover {
 /* @media (max-width: 1199px) { } */
 @media (max-width: 1399px) {
     .play_buttons {
-        left: 97px;
+        /* left: 97px; */
     }
 }
 
@@ -2569,8 +2572,8 @@ button.my-button:hover {
     }
 
     .play_buttons {
-        left: 24%;
-        bottom: 20px;
+        /* left: 24%; */
+        /* bottom: 20px; */
     }
 
     .ply-img::after {
@@ -2626,8 +2629,8 @@ button.my-button:hover {
     }
 
     .play_buttons {
-        left: 29.3%;
-        bottom: 11.7%;
+        left: 50%;
+        bottom: 5.7%;
     }
 
     .sec_3-main-sec-2 img {
@@ -2692,11 +2695,12 @@ button.my-button:hover {
 	    .sec_3-main-sec-23 {
         height: 90px;
         width: 90px;
-        transform: translate(-156px, -46px);
+        bottom: -30px;
+        left: 62%;
     }
 	    .play_buttons {
-        left: 29%;
-        bottom: 8%;
+        left: 49%;
+        bottom: -3%;
     }
 	    .ply-img::after {
         width: 70%;
@@ -2734,8 +2738,6 @@ button.my-button:hover {
 }
 @media (max-width: 460px) {
     .play_buttons {
-        left: 39.3%;
-        bottom: 8.7%;
     }
 
     .sec-4-footer-areae {
@@ -2749,18 +2751,13 @@ button.my-button:hover {
         top: 16px;
     }
 	.sec_3-main-sec-23 {
-        transform: translate(-147px, -33px);
     }
 	    .play_buttons {
-        left: 27%;
-        bottom: 6.7%;
     }
 }
 
 @media (max-width: 420px) {
     .play_buttons {
-        left: 39.3%;
-        bottom: 8.7%;
     }
     .sec_3rd {
         flex-wrap: wrap;
@@ -2775,8 +2772,6 @@ button.my-button:hover {
         transform: translate(-147px, -33px);
     }
 	    .play_buttons {
-        left: 24%;
-        bottom: 6.7%;
     }
     .sec-title {
         left: 5%;
@@ -2798,8 +2793,8 @@ button.my-button:hover {
 }
 @media (max-width: 320px) {
     .play_buttons {
-        left: 16%;
-        bottom: 9%;
+        /* left: 16%; */
+        /* bottom: 9%; */
     }
     .fac-icon {
         margin-left: -59px;
