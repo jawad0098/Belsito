@@ -43,7 +43,7 @@ body {
 }
 
 .nav_img img {
-    width: clamp(100px, 13.2vw, 200px);
+    width: clamp(132px, 13.2vw, 200px);
     height: auto;
     /* filter: invert(1); */
 }
@@ -79,11 +79,11 @@ a.nav-link {
     content: "";
     position: absolute;
     height: 10px;
-    width: 90%;
-    background: #fff;
-    left: 0px;
+    width: clamp(133px, 15.4vw, 403px);
+    left: 9px;
     bottom: -9px;
     z-index: 99;
+    background-color: #fff;
 }
 
 .nav_img::before {
@@ -94,7 +94,7 @@ a.nav-link {
     background: #00369b;
     bottom: -10px;
     z-index: 999;
-    right: 46%;
+    right: 38%;
 }
 
 .main-nav-add img {
@@ -118,12 +118,11 @@ a.nav-link {
 /* ================================= Section-1-start ================================== */
 
 .sec-1 {
-    background-image: url(../images/sec-1/linkedin-sales-solutions-1A8yP_5msac-unsplash.jpg);
-    /* background-image: url(/Assets/images/sec-1/download.avif); */
+    /* background-image: url(../images/sec-1/linkedin-sales-solutions-1A8yP_5msac-unsplash.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 750px;
+    height: 650px;
     position: relative;
     z-index: 9;
 }
@@ -132,14 +131,14 @@ a.nav-link {
     width: 50%;
     position: absolute;
     left: 20%;
-    top: 170px;
+    top: 120px;
     z-index: 9999;
 }
 
 .sec-title h4 {
     font-weight: 900;
     color: #fff;
-    font-size: clamp(18px, 5.2vw, 63px);
+    font-size: clamp(40px, 13.2vw, 64px);
     width: 100%;
 }
 
@@ -483,7 +482,10 @@ a.nav-link {
 }
 
 .section-3-title span {
-    padding: 20px 0;
+    padding: 30px 0;
+}
+.main-sec-three {
+    margin-top: 20px;
 }
 
 .sec_3rd {
@@ -2262,7 +2264,7 @@ button#pills-room-tab {
     justify-content: space-between;
 }
 .footer_icons {
-    width: clamp(100px,22vw,248px);
+    width: clamp(164px,85vw,235px);
 }
 
 .footer_icons img {
@@ -2334,14 +2336,14 @@ button#pills-room-tab {
     text-decoration: none;
     color: #fff;
     line-height: 30px;
-    font-size: 16px;
+    font-size: 14px;
     transition: 0.5s;
 }
 
 .section_footer_main-an h4 {
     padding: 0;
     color: #fff;
-    font-size: clamp(12px, 3.2vw, 27px);
+    font-size: clamp(22px, 3.2vw, 27px);
     font-weight: 700;
 }
 
@@ -2393,8 +2395,10 @@ li.breafkdf {
 .bottom_footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 12px 50px;
+    justify-content: space-around;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .bootom-sec-2 ul {
@@ -2406,7 +2410,8 @@ li.breafkdf {
     color: #6e7a7a;
     /* padding: 11px; */
     transition: 0.5s;
-    margin-right: 30px;
+    margin-right: 16px;
+    font-size: 14px;
 }
 
 .bootom-sec-2 ul {
@@ -2414,7 +2419,7 @@ li.breafkdf {
     align-items: center;
     justify-content: center;
     margin: 0;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .bootom-sec-2 ul li a:hover {
@@ -2448,6 +2453,9 @@ li.breafkdf {
     margin-bottom: auto;
     margin-top: auto;
 }
+.sec_footer-he {
+    margin-bottom: 10px;
+}
 p.pragraph_botm {
     padding: 30px 15px;
 }
@@ -2476,9 +2484,10 @@ p.pragraph_botm {
 }
 
 button.my-button:hover {
-    scale: 1.2;
+    /* scale: 1.2; */
     transition: 0.7s;
-    border: 1px solid #953214;
+    border: 1px solid #142a95;
+    background-color: #3f00ff;
 }
 
 .coverFloweffect .swiper-wrapper {
@@ -2565,6 +2574,9 @@ button.my-button:hover {
         width: 60%;
         height: 60%;
     }
+    .sec-title {
+        width: 60%;
+    }
 }
 
 @media (max-width: 991px) {
@@ -2617,6 +2629,15 @@ button.my-button:hover {
 
     .sec_3-main-sec-2 {
         transform: translate(58px, -47px);
+    }
+    .sec-six-second-main::after {
+        top: 91px;
+    }
+    .sec-title {
+        width: 70%;
+    }
+    .sec-title h4 {
+        font-size: clamp(40px, 13.2vw, 56px);
     }
 
 }
@@ -2677,6 +2698,12 @@ button.my-button:hover {
         width: 60%;
         height: 60%;
     }
+    .sec-title {
+        width: 80%;
+    }
+    .sec-title h4 {
+        font-size: clamp(30px, 7.2vw, 64px);
+    }
 }
 
 @media (max-width: 460px) {
@@ -2722,8 +2749,18 @@ button.my-button:hover {
         transform: translate(-147px, -33px);
     }
 	    .play_buttons {
-        left: 27%;
+        left: 24%;
         bottom: 6.7%;
+    }
+    .sec-title {
+        left: 14%;
+        top: 82px;
+    }
+    .sec-title h4 {
+        font-size: clamp(34px, 7.2vw, 64px);
+    }
+    .sec-1 {
+        height: 540px;
     }
 }
 
