@@ -2705,6 +2705,20 @@ button.my-button:hover {
         font-size: clamp(30px, 7.2vw, 64px);
     }
 }
+@media (max-width: 576px) {
+    .sec_12-fist {
+        left: 50px;
+    }
+    .sec_12-last h4 {
+        font-size: clamp(30px,10.2vw,50px);
+    }
+    .sec_12-last {
+        right: 50px;
+    }
+    .sec_12-fist h4 {
+        font-size: clamp(30px,10.2vw,50px);
+    }
+}
 
 @media (max-width: 460px) {
     .play_buttons {
