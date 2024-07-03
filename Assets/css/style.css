@@ -2762,6 +2762,28 @@ button.my-button:hover {
     .sec-1 {
         height: 540px;
     }
+    .fac-icon {
+        margin-left: -40px;
+    }
+    .section-3-title span {
+        display: inline-block;
+        padding-bottom: 20px;
+    }
 }
-
+@media (max-width: 320px) {
+    .play_buttons {
+        left: 16%;
+        bottom: 9%;
+    }
+    .fac-icon {
+        margin-left: -59px;
+    }
+    .sec-title h4 {
+        font-size: clamp(28px, 7.2vw, 64px);
+    }
+    .section-3-title span {
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+}
 
